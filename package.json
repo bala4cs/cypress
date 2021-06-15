@@ -1,0 +1,15 @@
+{
+  "name": "cypress-automation",
+  "version": "1.0.0",
+  "description": "The framework to explore the various types of elements in dom using the cypress tool with the proper framework setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "bala",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.5.0"
+  }
+}
