@@ -13,5 +13,20 @@ export default class PageAdapter {
        return this.get(selector).type(content);
     }
 
+    click(selector) {
+        return this.get(selector).click();
+    }
+
+    check(selector) {
+        return this.get(selector).check();
+    }
+
+    checkForce(selector) {
+        return this.get(selector).check({force: true});
+    }
+
+    multipleClick(selector) {
+        return this.get(selector).click({ multiple: true })
+    } 
     
 };

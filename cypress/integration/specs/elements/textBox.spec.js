@@ -3,6 +3,8 @@ import { COMPONENT } from '../../helper/static/TestModuleName';
 import Home from '../../helper/pages/Home';
 import LeftPanel from '../../helper/pages/modules/LeftPanel';
 import TextBox from '../../helper/pages/elements/TextBox';
+import Menu from '../../helper/static/MenuEnum';
+import State  from '../../helper/static/StateEnum';
 
 const home = new Home();
 const leftPanel = new LeftPanel();
@@ -14,14 +16,15 @@ describe(`${COMPONENT.textBox}`, () => {
 
     it('should navigate to the elements page and check the menu list', function() {
       cy.visit(Cypress.env('url'));
-      home.clickCard('Elements');
-      cy.url().should('contains','elements');
+      home.clickCard(Menu.SUBMENU.ElEMENTS);
+      cy.url().should('contains',State.ElEMENTS);
       leftPanel.getMenuList().should('have.length',6);
       leftPanel.getSubMenuList().should('have.length',9);
     })
     
     it('should click the text box and enter the valid details in the text box', function() {
-      leftPanel.clickSubMenu('Text Box');
+      leftPanel.clickSubMenu(Menu.ElEMENT.TEXT_BOX);
+      cy.url().should('contains',State.TEXTBOX);
       textBox.setUserName('UserName');
       textBox.setEmail('bala@mail.com');
       textBox.setCurrentAddress('CurrentAddress');
