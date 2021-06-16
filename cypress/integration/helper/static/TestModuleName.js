@@ -7,6 +7,7 @@
 
  const COMPONENT = {
     textBox: 'Text Box',
+    checkBox: 'Check Box',
 };
 
 export default {
