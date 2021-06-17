@@ -1,16 +1,16 @@
 
-import { COMPONENT } from '../../helper/static/TestModuleName';
-import Home from '../../helper/pages/Home';
-import LeftPanel from '../../helper/pages/modules/LeftPanel';
-import RadioBtn from '../../helper/pages/elements/RadioBtn';
-import Menu from '../../helper/static/MenuEnum';
-import State from '../../helper/static/StateEnum';
+import { COMPONENT } from '../../../helper/static/TestModuleName';
+import Home from '../../../helper/pages/Home';
+import LeftPanel from '../../../helper/pages/modules/LeftPanel';
+import RadioBtn from '../../../helper/pages/elements/RadioBtn';
+import Menu from '../../../helper/static/MenuEnum';
+import State from '../../../helper/static/StateEnum';
 
 const home = new Home();
 const leftPanel = new LeftPanel();
 const radioBtn = new RadioBtn();
 
-describe(`${COMPONENT.checkBox}`, () => {
+describe(`${COMPONENT.radioBtn}`, () => {
 
   describe('Validate the radio button with selection options enabled', function() {
 

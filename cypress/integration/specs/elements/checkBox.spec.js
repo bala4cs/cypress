@@ -1,10 +1,10 @@
 
-import { COMPONENT } from '../../helper/static/TestModuleName';
-import Home from '../../helper/pages/Home';
-import LeftPanel from '../../helper/pages/modules/LeftPanel';
-import CheckBox from '../../helper/pages/elements/CheckBox';
-import Menu from '../../helper/static/MenuEnum';
-import State from '../../helper/static/StateEnum';
+import { COMPONENT } from '../../../helper/static/TestModuleName';
+import Home from '../../../helper/pages/Home';
+import LeftPanel from '../../../helper/pages/modules/LeftPanel';
+import CheckBox from '../../../helper/pages/elements/CheckBox';
+import Menu from '../../../helper/static/MenuEnum';
+import State from '../../../helper/static/StateEnum';
 
 const home = new Home();
 const leftPanel = new LeftPanel();
