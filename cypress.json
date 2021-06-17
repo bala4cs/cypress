@@ -1,5 +1,12 @@
 {
     "env": {
         "url": "https://demoqa.com/"
-    }    
+    },
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportTitle": "My Custom Title",
+        "overwrite": false,
+        "html": false,
+        "json": true
+    }
 }

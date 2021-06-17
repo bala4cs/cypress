@@ -4,12 +4,17 @@
   "description": "The framework to explore the various types of elements in dom using the cypress tool with the proper framework setup",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:run": "node cypress/scripts/cypress.js"
   },
   "keywords": [],
   "author": "bala",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^7.5.0"
-  }
+    "cypress": "^7.5.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  },
+  "dependencies": {}
 }

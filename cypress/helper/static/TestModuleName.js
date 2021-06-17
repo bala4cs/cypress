@@ -8,6 +8,7 @@
  const COMPONENT = {
     textBox: 'Text Box',
     checkBox: 'Check Box',
+    radioBtn: 'Radio Button',
 };
 
 export default {
