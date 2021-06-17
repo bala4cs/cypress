@@ -4,7 +4,6 @@
     },
     "reporter": "mochawesome",
     "reporterOptions": {
-        "reportDir": "cypress/results",
         "reportTitle": "My Custom Title",
         "overwrite": false,
         "html": false,
