@@ -12,6 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^7.5.0",
+    "del": "^6.0.0",
+    "lodash": "^4.17.21",
     "mochawesome": "^6.2.2",
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.2.0"
