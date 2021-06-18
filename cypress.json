@@ -2,6 +2,10 @@
     "env": {
         "url": "https://demoqa.com/"
     },
+    "retries": {
+        "runMode": 2,
+        "openMode": 0
+    },
     "reporter": "mochawesome",
     "reporterOptions": {
         "reportTitle": "My Custom Title",
