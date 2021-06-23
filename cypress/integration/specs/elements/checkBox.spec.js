@@ -5,7 +5,9 @@ import LeftPanel from '../../../helper/pages/modules/LeftPanel';
 import CheckBox from '../../../helper/pages/elements/CheckBox';
 import Menu from '../../../helper/static/MenuEnum';
 import State from '../../../helper/static/StateEnum';
+import GenericFun from '../../../helper/utils/GenericFun';
 
+const genericFun = new GenericFun();
 const home = new Home();
 const leftPanel = new LeftPanel();
 const checkBox = new CheckBox();
@@ -15,11 +17,7 @@ describe(`${COMPONENT.checkBox}`, () => {
   describe('Validate the check box options with full select and un-select options', function() {
 
     before(() => {
-      cy.visit(Cypress.env('url'));
-      home.clickCard(Menu.SUBMENU.ElEMENTS);
-      cy.url().should('contains',State.ElEMENTS);
-      leftPanel.getMenuList().should('have.length',6);
-      leftPanel.getSubMenuList().should('have.length',9);
+      genericFun.openElementsPage();
     });
 
     it('should click the check box and select all the values', function() {
@@ -39,11 +37,7 @@ describe(`${COMPONENT.checkBox}`, () => {
 
   describe('Validate the check box options with on select and un-select options', function () {
     before(() => {
-      cy.visit(Cypress.env('url'));
-      home.clickCard(Menu.SUBMENU.ElEMENTS);
-      cy.url().should('contains',State.ElEMENTS);
-      leftPanel.getMenuList().should('have.length',6);
-      leftPanel.getSubMenuList().should('have.length',9);
+      genericFun.openElementsPage();
     });
     
     it('should navigate to the workspace check box and click the angular value', function() {

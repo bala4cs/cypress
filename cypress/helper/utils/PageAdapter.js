@@ -17,6 +17,10 @@ export default class PageAdapter {
         return this.get(selector).click();
     }
 
+    reload() {
+        return cy.reload();
+    }
+
     check(selector) {
         return this.get(selector).check();
     }

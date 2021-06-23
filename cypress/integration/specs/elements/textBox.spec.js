@@ -5,7 +5,9 @@ import LeftPanel from '../../../helper/pages/modules/LeftPanel';
 import TextBox from '../../../helper/pages/elements/TextBox';
 import Menu from '../../../helper/static/MenuEnum';
 import State  from '../../../helper/static/StateEnum';
+import GenericFun from '../../../helper/utils/GenericFun';
 
+const genericFun = new GenericFun();
 const home = new Home();
 const leftPanel = new LeftPanel();
 const textBox = new TextBox();
@@ -15,11 +17,7 @@ describe(`${COMPONENT.textBox}`, () => {
   describe('Validate the text box with valid data', function() {
 
     it('should navigate to the elements page and check the menu list', function() {
-      cy.visit(Cypress.env('url'));
-      home.clickCard(Menu.SUBMENU.ElEMENTS);
-      cy.url().should('contains',State.ElEMENTS);
-      leftPanel.getMenuList().should('have.length',6);
-      leftPanel.getSubMenuList().should('have.length',9);
+      genericFun.openElementsPage();
     })
     
     it('should click the text box and enter the valid details in the text box', function() {

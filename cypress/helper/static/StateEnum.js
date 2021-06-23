@@ -5,4 +5,5 @@ module.exports = {
     TEXTBOX: '/text-box',
     CHECKBOX: '/checkbox',
     RADIOBTN: '/radio-button',
+    WEBTABLE: '/webtables',
 }

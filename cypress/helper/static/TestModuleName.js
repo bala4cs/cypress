@@ -9,6 +9,7 @@
     textBox: 'Text Box',
     checkBox: 'Check Box',
     radioBtn: 'Radio Button',
+    webTable: 'Web Tables',
 };
 
 export default {
