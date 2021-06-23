@@ -16,9 +16,9 @@ describe(`${COMPONENT.textBox}`, () => {
 
   describe('Validate the text box with valid data', function() {
 
-    it('should navigate to the elements page and check the menu list', function() {
+    before(() => {
       genericFun.openElementsPage();
-    })
+    });
     
     it('should click the text box and enter the valid details in the text box', function() {
       leftPanel.clickSubMenu(Menu.ElEMENT.TEXT_BOX);

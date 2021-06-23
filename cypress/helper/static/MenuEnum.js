@@ -10,5 +10,6 @@ module.exports = {
         CHECK_BOX: 'Check Box',
         RADIO_BTN: 'Radio Button',
         WEB_TABLE: 'Web Tables',
+        BUTTON: 'Buttons',
     },
 }
