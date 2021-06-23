@@ -5,7 +5,9 @@ import LeftPanel from '../../../helper/pages/modules/LeftPanel';
 import RadioBtn from '../../../helper/pages/elements/RadioBtn';
 import Menu from '../../../helper/static/MenuEnum';
 import State from '../../../helper/static/StateEnum';
+import GenericFun from '../../../helper/utils/GenericFun';
 
+const genericFun = new GenericFun();
 const home = new Home();
 const leftPanel = new LeftPanel();
 const radioBtn = new RadioBtn();
@@ -15,11 +17,7 @@ describe(`${COMPONENT.radioBtn}`, () => {
   describe('Validate the radio button with selection options enabled', function() {
 
     before(() => {
-      cy.visit(Cypress.env('url'));
-      home.clickCard(Menu.SUBMENU.ElEMENTS);
-      cy.url().should('contains',State.ElEMENTS);
-      leftPanel.getMenuList().should('have.length',6);
-      leftPanel.getSubMenuList().should('have.length',9);
+      genericFun.openElementsPage();
     });
 
     it('should click the check box and select all the values', function() {
