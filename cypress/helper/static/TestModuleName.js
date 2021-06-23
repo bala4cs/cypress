@@ -10,6 +10,7 @@
     checkBox: 'Check Box',
     radioBtn: 'Radio Button',
     webTable: 'Web Tables',
+    button: 'Buttons',
 };
 
 export default {

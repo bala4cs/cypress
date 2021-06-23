@@ -1,4 +1,3 @@
-
 import { COMPONENT } from '../../../helper/static/TestModuleName';
 import RegForm from '../../../helper/pages/modules/RegForm';
 import WebTable from '../../../helper/pages/elements/WebTable';

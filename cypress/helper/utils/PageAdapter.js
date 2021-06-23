@@ -1,4 +1,3 @@
-
 export default class PageAdapter {
 
     get(selector) {
@@ -13,8 +12,20 @@ export default class PageAdapter {
        return this.get(selector).type(content);
     }
 
+    clearType(selector, content) {
+        return this.get(selector).clear().type(content);
+    }
+
     click(selector) {
         return this.get(selector).click();
+    }
+
+    doubleClick(selector) {
+        return this.get(selector).dblclick();
+    }
+
+    rightClick(selector) {
+        return this.get(selector).rightclick();
     }
 
     reload() {
