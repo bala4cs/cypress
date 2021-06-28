@@ -18,5 +18,7 @@
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.2.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "prettier": "^2.3.2"
+  }
 }
