@@ -11,6 +11,7 @@
     radioBtn: 'Radio Button',
     webTable: 'Web Tables',
     button: 'Buttons',
+    links: 'Links',
 };
 
 export default {

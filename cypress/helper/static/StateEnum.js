@@ -7,4 +7,5 @@ module.exports = {
     RADIOBTN: '/radio-button',
     WEBTABLE: '/webtables',
     BUTTON: '/buttons',
+    LINK: '/links',
 }

@@ -11,5 +11,6 @@ module.exports = {
         RADIO_BTN: 'Radio Button',
         WEB_TABLE: 'Web Tables',
         BUTTON: 'Buttons',
+        LINK: 'Links',
     },
 }
