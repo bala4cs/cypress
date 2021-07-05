@@ -17,9 +17,9 @@ describe(`${COMPONENT.webTable}`, () => {
     genericFun.openElementsPage();
   });
 
-  describe('Validate the web table visiblity', function() {
+  describe('Validate the web table visiblity', () => {
 
-    it('should click the check box and check the table visiblity', function() {
+    it('should click the check box and check the table visiblity', () => {
       leftPanel.clickSubMenu(Menu.ElEMENT.WEB_TABLE);
       cy.url().should('contains',State.WEBTABLE);
       webTable.getAdd().should('be.visible');
@@ -43,18 +43,18 @@ describe(`${COMPONENT.webTable}`, () => {
 
   });
 
-  describe('Validate the search facility in web tables', function() {
+  describe('Validate the search facility in web tables', () => {
 
-    it('should able to search the web tables with the proper last name', function() {
+    it('should able to search the web tables with the proper last name', () => {
       webTable.typeSearchBox('Vega');
       webTable.getRow().eq(0).should('have.text', 'CierraVega39cierra@example.com10000Insurance ');
     });
 
   });
 
-  describe('Validate the error message in the Registration form', function() {
+  describe('Validate the error message in the Registration form', () => {
 
-    it('should get the proper label in the text box', function() {
+    it('should get the proper label in the text box', () => {
       webTable.clickAdd();
       regForm.getFirstNameLabel().should('have.text', 'First Name');
       regForm.getLastNameLabel().should('have.text', 'Last Name');
@@ -64,7 +64,7 @@ describe(`${COMPONENT.webTable}`, () => {
       regForm.getDeptLabel().should('have.text', 'Department');
     });
 
-    it('should show the red-color border in all the text box, once click the submit button', function() {
+    it('should show the red-color border in all the text box, once click the submit button', () => {
       regForm.clickSubmit();
       regForm.getFirstName().should('have.css','border-top-color', 'rgb(220, 53, 69)');
       regForm.getLastName().should('have.css','border-top-color', 'rgb(220, 53, 69)');
@@ -81,9 +81,9 @@ describe(`${COMPONENT.webTable}`, () => {
 
   });
 
-  describe('Validate the success message in the Registration form', function() {
+  describe('Validate the success message in the Registration form', () => {
 
-    it('should add the data without any issues in the web tables', function() {
+    it('should add the data without any issues in the web tables', () => {
       webTable.reload();
       webTable.clickAdd();
       regForm.typeFirstName('FirstName');
@@ -99,9 +99,9 @@ describe(`${COMPONENT.webTable}`, () => {
 
   });
 
-  describe('Validate the edit message in the Registration form', function() {
+  describe('Validate the edit message in the Registration form', () => {
 
-    it('should update the data without any issues in the web tables', function() {
+    it('should update the data without any issues in the web tables', () => {
       webTable.reload();
       webTable.typeSearchBox('Vega');
       webTable.getFirstEditIcon().click();
@@ -114,9 +114,9 @@ describe(`${COMPONENT.webTable}`, () => {
   });
 
 
-  describe('Validate the delete message in the Registration form', function() {
+  describe('Validate the delete message in the Registration form', () => {
 
-    it('should delete the data without any issues in the web tables', function() {
+    it('should delete the data without any issues in the web tables', () => {
       webTable.reload();
       webTable.getFirstDelIcon().click();
       webTable.getRow().eq(0).should('not.have.text', 'CierraVega39cierra@example.com10000Insurance ');

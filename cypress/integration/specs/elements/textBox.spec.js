@@ -14,13 +14,13 @@ const textBox = new TextBox();
 
 describe(`${COMPONENT.textBox}`, () => {
 
-  describe('Validate the text box with valid data', function() {
+  describe('Validate the text box with valid data', () => {
 
     before(() => {
       genericFun.openElementsPage();
     });
     
-    it('should click the text box and enter the valid details in the text box', function() {
+    it('should click the text box and enter the valid details in the text box', () => {
       leftPanel.clickSubMenu(Menu.ElEMENT.TEXT_BOX);
       cy.url().should('contains',State.TEXTBOX);
       textBox.setUserName('UserName');
@@ -36,7 +36,7 @@ describe(`${COMPONENT.textBox}`, () => {
   
   })
 
-  describe('Validate the invalid email address', function () {
+  describe('Validate the invalid email address', () => {
     it('should display the border background of email as red', () => {
       textBox.getEmail().clear();
       textBox.setEmail('bala');

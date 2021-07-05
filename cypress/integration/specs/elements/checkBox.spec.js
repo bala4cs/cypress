@@ -14,13 +14,13 @@ const checkBox = new CheckBox();
 
 describe(`${COMPONENT.checkBox}`, () => {
 
-  describe('Validate the check box options with full select and un-select options', function() {
+  describe('Validate the check box options with full select and un-select options', () => {
 
     before(() => {
       genericFun.openElementsPage();
     });
 
-    it('should click the check box and select all the values', function() {
+    it('should click the check box and select all the values', () => {
       leftPanel.clickSubMenu(Menu.ElEMENT.CHECK_BOX);
       cy.url().should('contains',State.CHECKBOX);
       checkBox.clickCollapse();
@@ -35,12 +35,12 @@ describe(`${COMPONENT.checkBox}`, () => {
 
   })
 
-  describe('Validate the check box options with on select and un-select options', function () {
+  describe('Validate the check box options with on select and un-select options',  () => {
     before(() => {
       genericFun.openElementsPage();
     });
     
-    it('should navigate to the workspace check box and click the angular value', function() {
+    it('should navigate to the workspace check box and click the angular value', ()=> {
       leftPanel.clickSubMenu(Menu.ElEMENT.CHECK_BOX);
       cy.url().should('contains',State.CHECKBOX);
       checkBox.clickClosedCollapsal();
