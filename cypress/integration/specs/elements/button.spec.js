@@ -15,9 +15,9 @@ describe(`${COMPONENT.button}`, () => {
     genericFun.openElementsPage();
   });
 
-  describe('Validate the different button click options', function() {
+  describe('Validate the different button click options', () => {
 
-    it('should click the dynamic button and validate the message', function() {
+    it('should click the dynamic button and validate the message', () => {
       leftPanel.clickSubMenu(Menu.ElEMENT.BUTTON);
       cy.url().should('contains',State.BUTTON);
       button.getClick().eq(2).click();

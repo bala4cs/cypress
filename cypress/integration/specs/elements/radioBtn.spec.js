@@ -14,13 +14,13 @@ const radioBtn = new RadioBtn();
 
 describe(`${COMPONENT.radioBtn}`, () => {
 
-  describe('Validate the radio button with selection options enabled', function() {
+  describe('Validate the radio button with selection options enabled', () => {
 
     before(() => {
       genericFun.openElementsPage();
     });
 
-    it('should click the check box and select all the values', function() {
+    it('should click the check box and select all the values', () => {
       leftPanel.clickSubMenu(Menu.ElEMENT.RADIO_BTN);
       cy.url().should('contains',State.RADIOBTN);
       radioBtn.getYes().should('not.be.checked');
@@ -30,9 +30,9 @@ describe(`${COMPONENT.radioBtn}`, () => {
 
   })
 
-  describe('Validate the disabled radio button', function() {
+  describe('Validate the disabled radio button', () => {
 
-    it('should not able to be clickable', function() {
+    it('should not able to be clickable', () => {
       radioBtn.getNo().should('be.disabled');
     })
 
