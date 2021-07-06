@@ -12,6 +12,7 @@
     webTable: 'Web Tables',
     button: 'Buttons',
     links: 'Links',
+    broken: 'Broken Links - Images',
 };
 
 export default {

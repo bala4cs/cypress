@@ -8,4 +8,5 @@ module.exports = {
     WEBTABLE: '/webtables',
     BUTTON: '/buttons',
     LINK: '/links',
+    BROKEN: '/broken',
 }

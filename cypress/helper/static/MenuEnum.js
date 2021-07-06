@@ -12,5 +12,6 @@ module.exports = {
         WEB_TABLE: 'Web Tables',
         BUTTON: 'Buttons',
         LINK: 'Links',
+        BROKEN: 'Broken Links - Images',
     },
 }
