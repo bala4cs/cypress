@@ -1,4 +1,5 @@
 {
+    "author":"Bala",
     "env": {
         "url": "https://demoqa.com/"
     },
@@ -8,11 +9,15 @@
     },
     "reporter": "mochawesome",
     "reporterOptions": {
+        "reportDir":"cypress/results",
         "reportTitle": "My Custom Title",
+        "reportFilename": "report",
         "overwrite": false,
-        "html": false,
-        "json": true
+        "html": true,
+        "json": true,
+        "charts": true
     },
+    "video":false,
     "viewportHeight":900,
     "viewportWidth":1240
 }
