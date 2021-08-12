@@ -9,4 +9,8 @@ module.exports = class Home extends PageAdapter {
         return this.getCardBody().contains(data).click();
     }
 
+    getFooter() { 
+        return this.get('footer');
+    }
+
 };
